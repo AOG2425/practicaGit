@@ -55,7 +55,7 @@ namespace WindowsFormsApp1
 
                 if (tipoTelegrama == 'u')//AOG2425
             {
-                if (numPalabras <= 5)//SOLO CONTABA 10 LETRAS-EL URGENTE ES MAYOR A 10 LETRAS Y AQUI NO IBA UN ELSE 
+                if (numPalabras <= 7)//SOLO CONTABA 10 LETRAS-EL URGENTE ES MAYOR A 10 LETRAS Y AQUI NO IBA UN ELSE 
 
                 { coste = 5; }
 
