@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
 
             textoTelegrama = txtTelegrama.Text;
 
-            if (chkUrgente.Checked)
+            if (radioButton2.Checked)
             {
                 tipoTelegrama = 'u';
             }
