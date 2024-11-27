@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
                 tipoTelegrama = 'u';
             }
 
-            string[] palabras = textoTelegrama.Split(' ');//lineas que sustitui por numPalabras = textoTelegrama.Length
+            string[] palabras = textoTelegrama.Split(' ');
             numPalabras = palabras.Length;
 
             if (tipoTelegrama == 'o')
@@ -47,7 +47,7 @@ namespace WindowsFormsApp1
                 }
                 else
                 {
-                    coste = 2.5 /** 0.5*/ + (numPalabras - 10);//ANTES 0.5 * numPalabras; solo tenia el valor de c/palabra adicional
+                    coste = 2.5 + 0.5 *(numPalabras - 10);//ANTES 0.5 * numPalabras; solo tenia el valor de c/palabra adicional
                                                            //la sintaxis es parecida a la linea 59. AOG2425
                 }
             }
@@ -55,13 +55,13 @@ namespace WindowsFormsApp1
 
                 if (tipoTelegrama == 'u')//AOG2425
             {
-                if (numPalabras <= 7)//SOLO CONTABA 10 LETRAS-EL URGENTE ES MAYOR A 10 LETRAS Y AQUI NO IBA UN ELSE 
+                if (numPalabras <= 10)//SOLO CONTABA 10 LETRAS-EL URGENTE ES MAYOR A 10 LETRAS Y AQUI NO IBA UN ELSE 
 
                 { coste = 5; }
 
                 else
                 {
-                    coste = 5 /*+ 0.75*/ * (numPalabras - 10);
+                    coste = 5 +0.75 * (numPalabras - 10);
                 }
             }
             else
