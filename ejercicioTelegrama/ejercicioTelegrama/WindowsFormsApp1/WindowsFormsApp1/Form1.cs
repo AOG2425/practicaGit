@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
                 tipoTelegrama = 'u';
             }
 
-            string[] palabras = textoTelegrama.Split(' ');//lineas que sustitui por numPalabras = textoTelegrama.Length
+            string[] palabras = textoTelegrama.Split(' ');
             numPalabras = palabras.Length;
 
             if (tipoTelegrama == 'o')
@@ -55,7 +55,7 @@ namespace WindowsFormsApp1
 
                 if (tipoTelegrama == 'u')//AOG2425
             {
-                if (numPalabras <= 7)//SOLO CONTABA 10 LETRAS-EL URGENTE ES MAYOR A 10 LETRAS Y AQUI NO IBA UN ELSE 
+                if (numPalabras <= 10)//SOLO CONTABA 10 LETRAS-EL URGENTE ES MAYOR A 10 LETRAS Y AQUI NO IBA UN ELSE 
 
                 { coste = 5; }
 
