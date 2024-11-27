@@ -47,7 +47,7 @@ namespace WindowsFormsApp1
                 }
                 else
                 {
-                    coste = 2.5 /** 0.5*/ + (numPalabras - 10);//ANTES 0.5 * numPalabras; solo tenia el valor de c/palabra adicional
+                    coste = 2.5 + 0.5 *(numPalabras - 10);//ANTES 0.5 * numPalabras; solo tenia el valor de c/palabra adicional
                                                            //la sintaxis es parecida a la linea 59. AOG2425
                 }
             }
@@ -61,7 +61,7 @@ namespace WindowsFormsApp1
 
                 else
                 {
-                    coste = 5 /*+ 0.75*/ * (numPalabras - 10);
+                    coste = 5 +0.75 * (numPalabras - 10);
                 }
             }
             else
